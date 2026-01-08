@@ -1,0 +1,15 @@
+{
+  "name": "HA WooCommerce Bridge",
+  "content_in_root": false,
+  "domains": [
+    "ha_woocommerce_bridge"
+  ],
+  "render_readme": true,
+  "zip_release": true,
+  "hide_default_branch": false,
+  "homeassistant": "2024.6.0",
+  "country": "BE",
+  "iot_class": "local_polling",
+  "repository": "https://github.com/jebeke65/ha-woocommerce-bridge",
+  "authors": ["jebeke65"]
+}
