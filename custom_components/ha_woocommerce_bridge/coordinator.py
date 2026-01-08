@@ -25,8 +25,10 @@ class WooBridgeCoordinator(DataUpdateCoordinator[dict]):
     def __init__(self, hass: HomeAssistant, entry: ConfigEntry) -> None:
         self.hass = hass
         self.entry = entry
-        self.endpoint = entry.data[CONF_ENDPOINT].rstrip("/")
-        self.token = entry.data[CONF_TOKEN]
+
+        # Allow overriding via Options (gear icon)
+        self.endpoint = (entry.options.get(CONF_ENDPOINT) or entry.data[CONF_ENDPOINT]).rstrip("/")
+        self.token = entry.options.get(CONF_TOKEN) or entry.data[CONF_TOKEN]
 
         scan = entry.options.get(
             CONF_SCAN_INTERVAL,

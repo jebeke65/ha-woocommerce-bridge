@@ -48,7 +48,6 @@ class WooOpenOrdersSensor(WooBaseSensor):
     def extra_state_attributes(self):
         data = self.coordinator.data or {}
         return {
-            "statuses": data.get("statuses"),
             "generated_at": data.get("generated_at"),
         }
 
