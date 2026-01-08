@@ -1,0 +1,15 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "WooCommerce Bridge",
+        "description": "Geef de endpoint URL en token in (uit de WordPress plugin instellingen)."
+      }
+    },
+    "error": {
+      "cannot_connect": "Kan niet verbinden",
+      "forbidden": "Geen toegang (token ongeldig)",
+      "unknown": "Onverwachte fout"
+    }
+  }
+}
